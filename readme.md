@@ -142,7 +142,18 @@ theHarvester (v4.10.1) collects emails, sub-domains and hosts from **public sour
 
 **Command:** `theHarvester -d microsoft.com -l 1000 -b baidu`
 
-📝 `[ADD YOUR TASK 1 RESULT HERE: emails / hosts / IPs found, or "no results returned" if Baidu returned nothing]`
+📝 theHarvester -d microsoft.com -l 1000 -b baidu
+[*] Target: microsoft.com 
+
+[*] Searching Baidu. 
+
+[*] No IPs found.
+
+[*] No emails found.
+
+[*] No people found.
+
+[*] No hosts found.
 
 ### 4.2.2 Task 2: all sources, limit 50
 
@@ -152,7 +163,7 @@ theHarvester (v4.10.1) collects emails, sub-domains and hosts from **public sour
 - Many names point to **staging, QA, test and pre-production** environments (for example `wwwqa`, `wwwbeta` and `staging` hosts).
 - Sources that need an API key (SecurityScorecard, BuiltWith and others) were skipped with "Missing API key" warnings. This is expected without keys.
 - Some sources returned no emails, people, IPs or hosts. Results differ between sources and between runs.
-- The saved output file (`task2.txt`) has 184 lines.
+- The saved output file has 184 lines in total, including headers.
 
 🎯 *Attacker view:* every harvested email is a possible phishing target and every sub-domain is another door into the organisation that a defender may have forgotten about.
 
